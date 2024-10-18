@@ -1,33 +1,77 @@
-# React + TypeScript + Vite
+## Prerequisites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Before you begin, ensure you have the following installed on your machine:
 
-Currently, two official plugins are available:
+- [Node.js](https://nodejs.org/) (>=v18.17.x)
+- [npm](https://www.npmjs.com/) (>=9.6.X)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+To get started with this Vite app, follow the instructions below.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Clone the Repository
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone <repository-url>
+cd <project-folder>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Install Dependencies
 
-TODO:
-• add formik and yup
+Install all required dependencies using npm:
+
+```bash
+npm install
+```
+
+
+### 3. Before start change JWT to your
+
+Open src/app/store.ts:7 and put your token to variable
+
+```bash
+npm run dev
+```
+
+
+### 4. Start Development Server
+
+To start the local development server, run the following command:
+
+```bash
+npm run dev
+```
+
+By default, the app will be available at [http://localhost:5173](http://localhost:5173).
+
+### 5. Build for Production
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+This will generate a `dist` folder containing the compiled files. You can preview the build locally using:
+
+```bash
+npm run preview
+```
+
+### 6. Run Tests (Optional)
+
+If there are tests configured for the project, you can run them with:
+
+```bash
+npm run test
+```
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server.
+- `npm run build` - Builds the app for production.
+- `npm run preview` - Previews the production build locally.
+
+## Contact
+
+For questions or feedback, feel free to contact the project owner via [email](mailto:khudratovm@gmail.com).
